@@ -1,31 +1,34 @@
-<html >
-<style>
-.vl {
-    border-left: 10px solid #78866b;
-    height: 2900px;
-    position: absolute;
-    left: 0%;
-    margin-left: -2px;
-    top: 0;
-}
-
-
-</style>
-
-<div class="vl"></div>
-
- <head>
-  <meta charset="utf-8">
-  <title>ERS</title>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АвтоРС</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
-   hr {
-    border: none; /* Убираем границу */
-    background-color: #78866b; /* Цвет линии */
-    color: #78866b; /* Цвет линии для IE6-7 */
-    height: 10px; /* Толщина линии */
-   }
+    /* Стили для верхнего левого угла сайта */
+    #student-info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.7); /* увеличено значение прозрачности */
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 0.9rem; /* Размер шрифта для дополнительных надписей */
+      z-index: 1000; /* Помещаем элемент поверх других элементов */
+    }
+
+    #student-info .student-group {
+      font-weight: bold;
+    }
+
+    #student-info .student-name {
+      font-style: italic;
+    }
   </style>
-    <!-- Манифест -->
+
+  <!-- Манифест -->
   <link rel="manifest" href="manifest.json" />
   <script>
     
@@ -34,336 +37,112 @@
 
     document.querySelector('link[rel="manifest"]').href = url;
   </script>
- </head>
- <body>
-  <hr>
-
-  <hr>
- </body>
-
-<head>
-  <meta charset="utf-8">
-  <title>ERS</title>
- 
-  <link rel="stylesheet" type="text/css" href="112.css">
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-</head>
-
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-img {
-  border-radius: 30%;
-}
-</style>
-</head>
-
-<body>
-  <header>
-  <div  style="background-color:#78866b;">
-  
-  
-    <img src="R.jpg" width="270" align="left" hspace="20" alt="Avatar">
-	
-    <h1 align="center" style="background-color:#9c9c8d; text-decoration: underline;">Салон красоты "ERS"</h1><br>
-    <h2 align="center" >⎽-⎻⎺⎺⎻-⎽__Наш салон красоты подарит любой женщине небывалое эстетическое наслаждение!__⎽-⎻⎺⎺⎻</h2><br>
-    <h4 align="center">Отдохните от тяжелых будней вместе с "ERS". Доброжелательный персонал обеспечит вам веселый и полезный отдых. Качественное оборудование, профессиональные мастера, удобная мебель и самые вкусные пироженки в буфете!</h4>
-    <h6 align="center">»»————- ★ ————-«« </h6>
-	</div>
-  </header>
-  
- 
-
-
-  <div id="menu" style="background-color:#78866b;">
-    <ul>
-      <li><a href="новый 1.html">Главная</a></li>
-      <li><a href="новый 4.html">Контакты</a></li>
-      <li><a href="новый 5.html">Массаж</a></li>
-      <li><a href="новый 3.html">Маникюр</a></li>
-      <li><a href="новый 2.html">Стрижка</a></li>
-      <li><a href="новый 6.html">Спросить</a></li>
-    </ul>
-  </div>
-  
-  <body>
-  <header>
-  
-    <img width="270" align="left" hspace="20">
-    <h1 align="center" style="color:#7e625d;" >༻✦༺ Что сегодня в моде?  ༻✦༺ </h1><br>
-	
-	
-    <h2 align="center">-⎻⎺⎺⎻-⎽__⎽--⎻⎺⎺⎻--⎽__Мы неустанно следим за тенденциями, чтобы наши посетительницы оставались в тренде__⎽--⎻⎺⎺⎻--⎽__⎽-⎻⎺⎺⎻-⎽__⎽-</h2><br>
-	
-	 <body>
-  <hr>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider</title>
-    <style>
-        * { box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .slider {
-            position: relative;
-            max-width: 100%;
-            margin: auto;
-            overflow: hidden;
-            background-color: #918151;
-        }
-        .slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-            text-align: center;
-            position: relative;
-        }
-        .slides img {
-            width: 30%;
-            height: auto;
-        }
-        .caption {
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
-            text-align: center;
-            font-size: 24px;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px 0;
-        }
-        .title {
-            position: absolute;
-            top: 20px;
-            width: 100%;
-            text-align: center;
-            font-size: 24px;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px 0;
-        }
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-        .prev { left: 10px; }
-        .next { right: 10px; }
-    </style>
 </head>
 <body>
-
-<div class="slider">
-    <div class="slides">
-        <div class="slide">
-            <div class="title">⁺˚*･༓☾ ͙.Ногти .☽༓･*˚⁺‧͙</div>
-            <img src="11.jpg" alt="Image 1">
-			 <img src="111.jpg" alt="Image 1">
-            <div class="caption">Пусть лето будет ярким и запоминающимся! Создать нужное настроение можно ярким трендовым маникюром. Среди летних нейл-трендов 2024 будет много сочных оттенков лаков: в топе малиновый, красный, желтый, зеленый, оранжевый и бирюзовый цвета.</div>
-        </div>
-        <div class="slide">
-            <div class="title">⁺˚*･༓☾ .Прически .☽༓･*˚⁺</div>
-            <img src="22.jpg" alt="Image 2">
-			 <img src="222.jpg" alt="Image 2">
-            <div class="caption">Максимально модная версия прически в 2024 сезоне получится в дуэте с гладким эффектом. При создании такого образа не обойтись без геля — нужно обработать пряди и зачесать их к затылку, сформировав прямой или боковой пробор. Финальный штрих — спрей для придания блеска.</div>
-        </div>
-        <div class="slide">
-            <div class="title">͙⁺˚*･༓☾ .Релакс. ☽༓･*˚⁺‧</div>
-            <img src="33.jpeg" alt="Image 3">
-			 <img src="44.jpeg" alt="Image 3">
-            <div class="caption">Технологический прогресс в массаже: С развитием технологий появляются инновационные методы массажа. Это включает в себя применение виртуальной реальности и дополненной реальности для усиления визуального и звукового воздействия во время процедуры массажа.</div>
-        </div>
-    </div>
-    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-    <button class="next" onclick="changeSlide(1)">&#10095;</button>
-</div>
-
-<script>
-    let slideIndex = 0;
-    const slides = document.querySelector('.slides');
-    const totalSlides = slides.children.length;
-
-    function changeSlide(n) {
-        slideIndex = (slideIndex + n + totalSlides) % totalSlides;
-        slides.style.transform = 'translateX(' + (-slideIndex * 100) + '%)';
-    }
-</script>
-
-</body>
-</html>
-
-
- <hr>
- </body>
-	
-	
-	
-	
-	
-      <em><h1 align="center">꧁Почему стоит выбрать именно нас?꧂</h1></em><br>
-	
-	
-	<body>
-  <hr>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Создайте три одинаковых столбца, которые плавают рядом друг с другом */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 25px;
-}
-
-/* Очистить поплавки после столбцов */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
-
-
-<div class="row">
-  <div class="column" style="background-color:#918151;">
-  
-    <h2><p align = "center" style=" text-decoration: underline;">Дружелюбный персонал</p></h2>
-	
-  <img src="6.jpg" width="500" align="left" hspace="20">
-  <p><font color = '#918151'>.</font></p>
-    <p align="justify"><font size = '5'><margin-top=20px>Вам никто здесь никогда не нагрубит, каждая женщина в нашем салоне - Ваша новая подруга!</font></p>
+  <div id="student-info">
+    <div class="student-group">Работа выполнена студентом группы АС-23-04</div>
+    <div class="student-name">Слюнченко Романом</div>
   </div>
-  <div class="column" style="background-color:#918151;">
-    <h2><p align = "center" style=" text-decoration: underline;">Пироженки</p></h2>
-  <img src="66.jpeg" width="500" align="left" hspace="20">
-  <p><font color = '#918151'>.</font></p>
-    <p align = "justify"><font size = '5'> Что может быть лучше, чем насладиться вкуснейшим индийским чаем с пироженкой во время массажа?</font></p>
-  </div>
-  <div class="column" style="background-color:#918151;">
-    <h2><p align = "center" style=" text-decoration: underline;">Много растений</p></h2>
-  <img src="666.jpg" width="500" align="left" hspace="20">
-  <p><font color = '#918151'>.</font></p>
-    <p align="justify"><font size = '5'> Ощутите эту связь с природой, вдохните свежий воздух и раскройте свои чакры как настоящая женщина..</font></p>
-  </div>
-</div>
-    
-	
-	<hr>
- </body>
- 
-    <h6 align="center">»»————- ★ ————-«« </h6>
-  </header>
-  
-  <body>
-  <p>...</p>
- </body>
 
- <body>
   <header>
-  
-  
-    <h1 align="center"  style=" text-decoration: underline;">✮ !НОВИНКА! ✮</h1><br>
-	<h2><p align = "center" style="color:#7e625d;">-⎽__⎽-⎻⎺⎺⎻-⎽__⎽--⎻⎺⎺⎻--⎽__⎽-⎻⎺⎺⎻-⎽__⎽--⎻⎺⎺⎻-Гостям ERS еперь доступен "тайский" массаж!-⎽__⎽-⎻⎺⎺⎻-⎽__⎽--⎻⎺⎺⎻--⎽__⎽-⎻⎺⎺⎻-⎽__⎽--⎻⎺⎺⎻- </p></h2>
-	<body>
-  <hr>
-<style>
-	.wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.image img {
-    height: 500px;
-    width: 500px;
-}
-
-.text {
-    padding-left: 15px;
-}
-
-
-</style>
-<div class='wrapper' style="background-color:#9c9c8d;">
-
-    <div class='image'>
-        <img src="555.jpg">
-    </div>
-    <div class='text'>
-	    <h4>⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆ ⋆｡˚ ☽ ˚｡⋆｡˚☁︎˚｡⋆⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆ ⋆｡˚ ☽ ˚｡⋆｡˚☁︎˚｡⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆ ⋆｡˚ ☽ ˚｡⋆｡˚☁︎˚｡⋆</h4> 
-        <h2>Тайский массаж</h2>  <h3>— это особый тип массажа, который активизирует точки на теле, отвечающие за циркуляцию жизненной энергии. Тайский массаж помогает расслабиться, восстановить физические и духовные силы, улучшить работу внутренних органов и систем, а также придать тонус мышцам. </h3>
-        <span>Тайский массаж является частью традиционной медицины и философии в Таиланде.</span><br>
-		<h4>Узнать цены:</h4> 
-<select>
-  <option>Массажист старается - 5000</option>
-  <option>Массажист не старается - 2000</option>
-</select>
-    </div>
-	
- 
- 
- </div>
- <hr>
- </body>
-    <h6 align="center">»»————- ★ ————-«« </h6>
+    <h1>АвтоРС</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link" data-section="home">Главная</a></li>
+        <li><a href="#" class="nav-link" data-section="reviews">Отзывы</a></li>
+        <li><a href="#" class="nav-link" data-section="login">Личный кабинет</a></li>
+        <li><a href="#" class="nav-link" data-section="cart">Корзина</a></li>
+        <li><a href="#" class="nav-link" data-section="todo">Задачи</a></li>
+      </ul>
+    </nav>
   </header>
-  
-  
- </body>
-    <h2 align="center">Что же ждет наших дражайших гостей внутри?</h2>
-  </header>
-  
-  <body>
-  <hr>
-  <style>
-	.wraper {
-    display: flex;
-    align-items: center;
-}
 
-.image img {
-    height: 500px;
-    width: 600px;
-}
-
-.text {
-    padding-left: 15px;
-}
-
- </style>
- 
- 
-<div class="wrapper" style="background-color:#9c9c8d; display: flex; align-items: center; justify-content: space-between;">
-    <div class="text">
-	    <h4>⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆ ⋆｡˚ ☽ ˚｡⋆｡˚☁︎˚｡⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆ ⋆｡˚ ☽ ˚｡⋆｡˚☁︎˚｡⋆⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆ ⋆｡˚ ☽ ˚｡⋆｡˚☁︎˚｡⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆ ⋆｡˚ ☽ ˚｡⋆｡˚☁︎˚｡⋆</h4> 
-        <h2>Помещение нашего салона</h2>  
-        <h3>— самое трендовое оформление! Уютнее, чем дома:) Наши кресла мягче подушки, сидеть в нем можно целую вечность...</h3>
-        <span>Еще ни один клиент не вышел из салона недовольным!</span><br>
-		<h4>⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆ ⋆｡˚ ☽ ˚｡⋆｡˚☁︎˚｡⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆ ⋆｡˚ ☽ ˚｡⋆｡˚☁︎˚｡⋆⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆ ⋆｡˚ ☽ ˚｡⋆｡˚☁︎˚｡⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆ ⋆｡˚ ☽ ˚｡⋆｡˚☁︎˚｡⋆</h4> 
+  <section id="home" class="content-section active">
+    <h2>Последние объявления</h2>
+    <div id="car-list">
+      <!-- Здесь будут отображаться карточки с автомобилями -->
     </div>
-    <div class="image">
-        <img src="333.jpeg" alt="Салон">
-    </div>
-</div>
+  </section>
 
-</div>
- <hr>
- </body>
-    <h6 align="center">»»————- ★ ————-«« </h6>
-  </header>
+  <section id="reviews" class="content-section">
+    <h2>Оставить отзыв</h2>
+    <form id="feedbackForm">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" required>
+      <label for="message">Отзыв:</label>
+      <textarea id="message" rows="4" required></textarea>
+      <label for="date">Дата:</label>
+      <input type="date" id="date" required>
+      <button type="submit">Отправить</button>
+    </form>
+    <div id="reviews-list">
+      <!-- Здесь будут отзывы -->
+    </div>
+  </section>
+
+  <section id="login" class="content-section">
+    <h2>Личный кабинет</h2>
+    <div id="registration">
+      <h3>Регистрация</h3>
+      <form id="registrationForm">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" required>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+    </div>
+
+    <div id="loginForm">
+      <h3>Вход</h3>
+      <form id="userLoginForm">
+        <label for="loginUsername">Имя пользователя:</label>
+        <input type="text" id="loginUsername" required>
+        <label for="loginPassword">Пароль:</label>
+        <input type="password" id="loginPassword" required>
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+
+    <div id="advertisements" class="hidden">
+      <h3>Создать объявление</h3>
+      <form id="adForm">
+        <label for="adTitle">Название:</label>
+        <input type="text" id="adTitle" required>
+        <label for="adPrice">Цена:</label>
+        <input type="number" id="adPrice" required>
+        <label for="adDescription">Описание:</label>
+        <textarea id="adDescription" rows="4" required></textarea>
+        <label for="adImage">Фото:</label>
+        <input type="file" id="adImage" accept="image/*" required>
+        <button type="submit">Опубликовать</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="cart" class="content-section">
+    <h2>Корзина</h2>
+    <div id="cart-list">
+      <!-- Здесь будут отображаться товары в корзине -->
+    </div>
+    <button id="clear-cart">Очистить корзину</button>
+  </section>
+
+  <section id="todo" class="content-section">
+    <h2>ToDoList</h2>
+    <form id="todoForm">
+      <label for="task">Задача:</label>
+      <input type="text" id="task" required>
+      <label for="taskDate">Дата:</label>
+      <input type="date" id="taskDate" required>
+      <label for="taskColor">Цвет:</label>
+      <input type="color" id="taskColor" value="#ffffff">
+      <button type="submit">Добавить задачу</button>
+    </form>
+    <div id="todoList">
+      <!-- Здесь будут отображаться задачи -->
+    </div>
+  </section>
 
   <script>
     if ('serviceWorker' in navigator) {
@@ -383,4 +162,3 @@ img {
 
 </body>
 </html>
-
