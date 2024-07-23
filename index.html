@@ -123,13 +123,11 @@
         }
     </style>
     <link rel="manifest" href="manifest.json" />
-  <script>
-    
-    const blob = new Blob([JSON.stringify(manifest)], { type: 'application/manifest+json' });
-    const url = URL.createObjectURL(blob);
-
-    document.querySelector('link[rel="manifest"]').href = url;
-  </script>
+    <script>
+        const blob = new Blob([JSON.stringify(manifest)], { type: 'application/manifest+json' });
+        const url = URL.createObjectURL(blob);
+        document.querySelector('link[rel="manifest"]').href = url;
+    </script>
 </head>
 <body>
 
@@ -242,20 +240,21 @@
         <p>🕓Режим работы: Пн-Пт 09:00 - 21:00, Сб-Вс 10:00 - 18:00</p>
     </div>
 </div>
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
-          console.log('Service Worker зарегистрирован с областью:', registration.scope);
-        }).catch(function(error) {
-          console.log('Service Worker регистрация провалилась:', error);
-        });
-      });
-    }
-  </script>
 
-  <script src="script.js"></script>
-<script type="text/javascript" src="serviceworker.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js').then(registration => {
+                console.log('Service Worker зарегистрирован с областью:', registration.scope);
+            }).catch(error => {
+                console.log('Service Worker регистрация провалилась:', error);
+            });
+        });
+    }
+</script>
+
+<script src="script.js"></script>
+<script src="serviceworker.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
