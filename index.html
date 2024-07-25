@@ -137,19 +137,6 @@
     </div>
   </section>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
-          console.log('Service Worker зарегистрирован с областью:', registration.scope);
-        }).catch(function(error) {
-          console.log('Service Worker регистрация провалилась:', error);
-        });
-      });
-    }
-  </script>
-
-  <script src="script.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
