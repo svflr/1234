@@ -11,12 +11,12 @@
       position: absolute;
       top: 10px;
       left: 10px;
-      background-color: rgba(0, 0, 0, 0.7); /* увеличено значение прозрачности */
+      background-color: rgba(0, 0, 0, 0.7);
       color: #fff;
       padding: 5px 10px;
       border-radius: 4px;
-      font-size: 0.9rem; /* Размер шрифта для дополнительных надписей */
-      z-index: 1000; /* Помещаем элемент поверх других элементов */
+      font-size: 0.9rem;
+      z-index: 1000;
     }
 
     #student-info .student-group {
@@ -29,14 +29,7 @@
   </style>
 
   <!-- Манифест -->
-  <link rel="manifest" href="manifest.json" />
-  <script>
-    
-    const blob = new Blob([JSON.stringify(manifest)], { type: 'application/manifest+json' });
-    const url = URL.createObjectURL(blob);
-
-    document.querySelector('link[rel="manifest"]').href = url;
-  </script>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <div id="student-info">
@@ -144,8 +137,19 @@
     </div>
   </section>
 
-  <script type="text/javascript" src="app.js"></script>
-  <script type="text/javascript" src="serviceworker.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          console.log('Service Worker зарегистрирован с областью:', registration.scope);
+        }).catch(function(error) {
+          console.log('Service Worker регистрация провалилась:', error);
+        });
+      });
+    }
+  </script>
 
+  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
